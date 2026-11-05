@@ -14,6 +14,13 @@ public partial class FrmLogin : Form
         InitializeComponent();
     }
 
+    public void LimparCampos()
+    {
+        txtUsuario.Text = string.Empty;
+        txtSenha.Text = string.Empty;
+        txtUsuario.Focus();
+    }
+
     private void btnLogar_Click(object sender, EventArgs e)
     {
         if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtSenha.Text))
@@ -36,7 +43,7 @@ public partial class FrmLogin : Form
                 string senhaArmazenada = resultado.ToString() ?? string.Empty;
                 if (Autenticacao.VerificarSenha(senhaArmazenada, txtSenha.Text))
                 {
-                    MessageBox.Show("Login bem-sucedido!");
+                    Console.WriteLine("Login bem-sucedido!");
                     FrmMain frmMain = new();
                     frmMain.Show();
                     this.Hide();
@@ -71,12 +78,12 @@ public partial class FrmLogin : Form
             var resultado = comando.ExecuteScalar();
             if (resultado != null)
             {
-                MessageBox.Show("Tabela 'usuario' já existe.");
+                Console.WriteLine("Tabela 'usuario' já existe.");
                 comando.CommandText = "SELECT usuario FROM usuario WHERE usuario = 'admin';";
                 resultado = comando.ExecuteScalar();
                 if (resultado != null)
                 {
-                    MessageBox.Show("Usuário 'admin' já existe.");
+                    Console.WriteLine("Usuário 'admin' já existe.");
                 }
                 else
                 {
@@ -84,14 +91,14 @@ public partial class FrmLogin : Form
                     byte[] salt = RandomNumberGenerator.GetBytes(16);
                     int iteracoes = 600000;
                     byte[] hash = Rfc2898DeriveBytes.Pbkdf2(senhaPadrao, salt, iteracoes, HashAlgorithmName.SHA256, 32);
-                    string senhaArmazenada = $"{iteracoes}:{Convert.ToBase64String(salt)} : {Convert.ToBase64String(hash)}";
+                    string senhaArmazenada = $"{iteracoes}:{Convert.ToBase64String(salt)}:{Convert.ToBase64String(hash)}";
 
                     comando.Parameters.Clear();
                     comando.CommandText = "INSERT INTO usuario (usuario, senha) VALUES ('admin', @senha);";
                     comando.Parameters.AddWithValue("@senha", senhaArmazenada);
                     comando.ExecuteNonQuery();
 
-                    MessageBox.Show("Usuário 'admin' criado com sucesso.");
+                   Console.WriteLine("Usuário 'admin' criado com sucesso.");
                 }
             }
             else
