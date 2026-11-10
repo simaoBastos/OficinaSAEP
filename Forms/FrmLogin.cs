@@ -98,7 +98,7 @@ public partial class FrmLogin : Form
                     comando.Parameters.AddWithValue("@senha", senhaArmazenada);
                     comando.ExecuteNonQuery();
 
-                   Console.WriteLine("Usuário 'admin' criado com sucesso.");
+                    Console.WriteLine("Usuário 'admin' criado com sucesso.");
                 }
             }
             else

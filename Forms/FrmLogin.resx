@@ -144,7 +144,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblUsuario.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="lblSenha.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt, style=Bold</value>
@@ -171,7 +171,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSenha.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="txtUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>283, 140</value>
@@ -192,7 +192,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtUsuario.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="txtSenha.Location" type="System.Drawing.Point, System.Drawing">
     <value>283, 194</value>
@@ -213,7 +213,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtSenha.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="BtnLogar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt, style=Bold</value>
@@ -240,7 +240,71 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BtnLogar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblNomeTeste.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNomeTeste.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 10pt</value>
+  </data>
+  <data name="lblNomeTeste.Location" type="System.Drawing.Point, System.Drawing">
+    <value>568, 151</value>
+  </data>
+  <data name="lblNomeTeste.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 18</value>
+  </data>
+  <data name="lblNomeTeste.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblNomeTeste.Text" xml:space="preserve">
+    <value>admin</value>
+  </data>
+  <data name="&gt;&gt;lblNomeTeste.Name" xml:space="preserve">
+    <value>lblNomeTeste</value>
+  </data>
+  <data name="&gt;&gt;lblNomeTeste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNomeTeste.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblNomeTeste.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lblSenhaTeste.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSenhaTeste.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 10pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblSenhaTeste.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSenhaTeste.Location" type="System.Drawing.Point, System.Drawing">
+    <value>568, 205</value>
+  </data>
+  <data name="lblSenhaTeste.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 18</value>
+  </data>
+  <data name="lblSenhaTeste.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblSenhaTeste.Text" xml:space="preserve">
+    <value>admin123</value>
+  </data>
+  <data name="&gt;&gt;lblSenhaTeste.Name" xml:space="preserve">
+    <value>lblSenhaTeste</value>
+  </data>
+  <data name="&gt;&gt;lblSenhaTeste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSenhaTeste.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblSenhaTeste.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -258,7 +322,6 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>

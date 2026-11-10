@@ -77,4 +77,8 @@ public partial class FrmMain : Form
         this.Hide();
     }
 
+    private void FrmVeiculos_Load(object sender, EventArgs e)
+    {
+
+    }
 }

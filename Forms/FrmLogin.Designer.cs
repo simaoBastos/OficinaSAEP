@@ -34,6 +34,8 @@
             txtUsuario = new TextBox();
             txtSenha = new TextBox();
             BtnLogar = new Button();
+            lblNomeTeste = new Label();
+            lblSenhaTeste = new Label();
             SuspendLayout();
             // 
             // lblUsuario
@@ -67,11 +69,27 @@
             BtnLogar.UseVisualStyleBackColor = true;
             BtnLogar.Click += btnLogar_Click;
             // 
+            // lblNomeTeste
+            // 
+            resources.ApplyResources(lblNomeTeste, "lblNomeTeste");
+            lblNomeTeste.BackColor = Color.Transparent;
+            lblNomeTeste.ForeColor = Color.Gray;
+            lblNomeTeste.Name = "lblNomeTeste";
+            // 
+            // lblSenhaTeste
+            // 
+            resources.ApplyResources(lblSenhaTeste, "lblSenhaTeste");
+            lblSenhaTeste.BackColor = Color.Transparent;
+            lblSenhaTeste.ForeColor = Color.Gray;
+            lblSenhaTeste.Name = "lblSenhaTeste";
+            // 
             // FrmLogin
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            Controls.Add(lblSenhaTeste);
+            Controls.Add(lblNomeTeste);
             Controls.Add(lblUsuario);
             Controls.Add(BtnLogar);
             Controls.Add(txtSenha);
@@ -90,5 +108,7 @@
         private TextBox txtUsuario;
         private TextBox txtSenha;
         private Button BtnLogar;
+        private Label lblNomeTeste;
+        private Label lblSenhaTeste;
     }
 }
